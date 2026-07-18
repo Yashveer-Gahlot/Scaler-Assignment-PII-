@@ -13,7 +13,7 @@
 ## 🌐 Live Demo
 
 Test the pipeline instantly via our interactive web dashboard on Streamlit Community Cloud:
-**[Launch Enterprise PII Redactor →]([https://your-streamlit-url-here.streamlit.app](https://scalerassignment.streamlit.app/))**
+**[Launch Enterprise PII Redactor →](https://scalerassignment.streamlit.app/)**
 
 *(Note: Cloud processing memory is capped. For full 465-page document processing, use the local CLI.)*
 
