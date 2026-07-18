@@ -34,9 +34,13 @@ from typing import Optional
 try:
     import en_core_web_sm  # noqa: F401
 except ImportError:
-    subprocess.check_call(
-        [sys.executable, "-m", "spacy", "download", "en_core_web_sm", "--quiet"]
-    )
+    try:
+        subprocess.run(
+            [sys.executable, "-m", "spacy", "download", "en_core_web_sm", "--quiet"],
+            check=True, capture_output=True,
+        )
+    except Exception:
+        pass  # Model should be installed via requirements.txt
 
 import streamlit as st
 
